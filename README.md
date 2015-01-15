@@ -9,8 +9,8 @@ This repository contains a **Dockerfile** for a base Node.js Docker image, and p
 
 ### Installed packages
 
-* [Node.js][nodejs] Javascript framework built on the [Chromee V8][chrome_v8] JavaScript engine.
-* [npm][npm] Node.js package manager.
+* [Node.js][nodejs] - Javascript framework built on the [Chrome V8][chrome_v8] JavaScript engine.
+* [npm][npm] - Node.js package manager.
 
 [nodejs]: https://nodejs.org/
 [chrome_v8]: https://developers.google.com/v8/
@@ -18,7 +18,7 @@ This repository contains a **Dockerfile** for a base Node.js Docker image, and p
 
 ## Resources
 
-These resources have been helpful when creating this Docker image, but they are mostly used as a source of inspiration. The examples provided in the resources, if used, have been tweeked to fit with our project.
+These resources have been helpful when creating this Docker image:
 
 * [Dockerfile's Github repository for Node.js Docker image.][github_repository_dockerfile_nodejs]
 

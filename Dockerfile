@@ -1,7 +1,7 @@
 # Pull base image
 FROM bachelorthesis/docker-ubuntu
 
-# Install Node.js from latest source
+# Install Node.js
 RUN \
   cd /tmp && \
   wget http://nodejs.org/dist/node-latest.tar.gz && \

@@ -2,7 +2,7 @@
 FROM bachelorthesis/archlinux
 
 # Install Node
-RUN pacman -Sy nodejs --noconfirm
+RUN pacman-install nodejs
 
 # Define working directory
 WORKDIR /root

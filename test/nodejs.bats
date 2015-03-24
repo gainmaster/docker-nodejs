@@ -3,7 +3,7 @@ setup() {
 }
 
 @test "pacman cache is empty" {
-  run docker run --entrypoint=/bin/bash bachelorthesis/nodejs -c "ls -1 /var/cache/pacman/pkg | wc -l"
+  run docker run bachelorthesis/nodejs -c "ls -1 /var/cache/pacman/pkg | wc -l"
   [ $status -eq 0 ]
   [ "$output" = "0" ]
 }

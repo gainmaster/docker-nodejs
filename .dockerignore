@@ -2,5 +2,6 @@
 .git/
 .gitattributes
 .gitignore
+build
 README.md
 Vagrantfile

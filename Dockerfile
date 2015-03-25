@@ -1,5 +1,5 @@
-# Pull base image
 FROM bachelorthesis/archlinux
+MAINTAINER Knut Lorvik <knutlor@tihlde.org>
 
 # Install Node
 RUN pacman-install nodejs

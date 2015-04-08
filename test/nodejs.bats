@@ -24,6 +24,7 @@ setup() {
 }
 
 @test "npm version 2.7.6" {
+  skip 
   run docker run bachelorthesis/nodejs bash -c "npm -v"
   [[ "$output" =~ "2.7.6"  ]]
 }

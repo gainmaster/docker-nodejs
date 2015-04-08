@@ -13,9 +13,9 @@ setup() {
   [ "$status" -eq 0 ]
 }
 
-@test "node version 0.12.0" {
+@test "node version 0.12.2" {
   run docker run bachelorthesis/nodejs bash -c "node -v"
-  [[ "$output" =~ "v0.12.0"  ]]
+  [[ "$output" =~ "v0.12.2"  ]]
 }
 
 @test "npm binary is found in $PATH" {
@@ -23,7 +23,7 @@ setup() {
   [ "$status" -eq 0 ]
 }
 
-@test "npm version 2.7.1" {
+@test "npm version 2.7.6" {
   run docker run bachelorthesis/nodejs bash -c "npm -v"
-  [[ "$output" =~ "2.7.1"  ]]
+  [[ "$output" =~ "2.7.6"  ]]
 }

@@ -96,10 +96,14 @@ function push {
         fi
 
         sudo docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
-        sudo docker push ${DOCKER_IMAGE_NAME}:${version}
+        while read tag; do
+            sudo docker push ${DOCKER_IMAGE_NAME}:${version}
+        done < "${directory}/tags"
     else
         docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
-        docker push ${DOCKER_IMAGE_NAME}:${version}
+        while read tag; do
+            docker push ${DOCKER_IMAGE_NAME}:${version}
+        done < "${directory}/tags"
     fi
 }
 

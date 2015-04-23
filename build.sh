@@ -126,9 +126,7 @@ if [ ${#actions[@]} -eq 0 ]; then
 fi
 
 if [ ${#versions[@]} -eq 0 ]; then
-    for version in ${VERSION_DIRECTORY}/*; do
-        versions+=(nodejs bower-grunt yeoman generator-angular generator-cg-angular)
-    done
+    versions=(nodejs bower-grunt yeoman generator-angular generator-cg-angular)
 fi
 
 for action in "${actions[@]}"; do 

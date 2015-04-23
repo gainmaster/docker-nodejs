@@ -1,6 +1,0 @@
-.vagrant/
-.git/
-.gitattributes
-.gitignore
-build.sh
-README.md

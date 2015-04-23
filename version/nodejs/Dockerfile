@@ -1,5 +1,5 @@
 FROM gainmaster/archlinux:base-devel
-MAINTAINER Knut Lorvik <knutlor@tihlde.org>
+MAINTAINER Tony Hesjevik <tony@hesjevik.no>
 
 RUN pacman-install git nodejs
 

@@ -96,10 +96,10 @@ function push {
         fi
 
         sudo docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
-        sudo docker push $IMAGE_NAME
+        sudo docker push ${DOCKER_IMAGE_NAME}:${version}
     else
         docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
-        docker push $IMAGE_NAME
+        docker push ${DOCKER_IMAGE_NAME}:${version}
     fi
 }
 

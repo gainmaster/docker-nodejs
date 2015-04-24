@@ -130,7 +130,7 @@ if [ ${#actions[@]} -eq 0 ]; then
 fi
 
 if [ ${#versions[@]} -eq 0 ]; then
-    versions=(nodejs bower-grunt yeoman generator-angular generator-cg-angular)
+    versions=(nodejs bower-grunt yeoman generator-angular generator-cg-angular generator-gulp-angular)
 fi
 
 for action in "${actions[@]}"; do 

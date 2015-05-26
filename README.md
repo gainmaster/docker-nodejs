@@ -2,12 +2,24 @@
 
 [![Build Status](http://ci.hesjevik.im/buildStatus/icon?job=docker-nodejs)](http://ci.hesjevik.im/job/docker-nodejs/) [![Docker Hub](https://img.shields.io/badge/docker-ready-blue.svg?style=plastic)](https://registry.hub.docker.com/u/gainmaster/nodejs)
 
-This repository contains a **Dockerfile** for a base Node.js Docker image, and provides **Vagrantfiles** for development, and **shell scripts** for easy startup of containers. This repository is a part of an automated build, published to the [Docker Hub][docker_hub_repository].
+This repository contains a **Dockerfile** for a base Node.js Docker image. This repository is a part of an automated build, published to the [Docker Hub][docker_hub_repository].
 
 **Base image:** [gainmaster/archlinux][docker_hub_base_image]
 
 [docker_hub_repository]: https://registry.hub.docker.com/u/gainmaster/nodejs/
 [docker_hub_base_image]: https://registry.hub.docker.com/u/gainmaster/archlinux/
+
+## Docker Hub automated build tags
+
+`gainmaster/nodejs` provides multiple tagged images:
+
+* `latest` (default) : NodeJS (alias to `nodejs`)
+* `bower-grunt` : Bower and Grunt
+* `generator-angular` : Angular Generator
+* `generator-cg-angular` : Angular CG Generator
+* `generator-gulp-angular` : Angular Gulp Generator
+* `nodejs` : NodeJS
+* `yeoman` : Yeoman
 
 ### Installed packages
 
